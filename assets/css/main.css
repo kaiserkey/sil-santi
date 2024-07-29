@@ -99,7 +99,7 @@ h1 {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style:oblique;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .bg-fs-t{
@@ -116,3 +116,16 @@ h1 {
     background-color: #DFD3C3;
 }
 
+/* estilos fotos de la fiesta */
+.fiesta img{
+    max-height: 700px;
+}
+
+.fiesta{
+    background-color: #DFD3C3;
+}
+
+/* estilos de la localizacion en el mapa */
+.location-map{
+    background-color: #DFD3C3;
+}
