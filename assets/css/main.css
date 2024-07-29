@@ -11,9 +11,6 @@ html,
 body {
     width: 100%;
     height: 100%;
-}
-
-body {
     line-height: 1;
 }
 
@@ -32,7 +29,7 @@ h1 {
     color: white;
     font-weight: 500;
 }
-
+/* menu e imagen de fondo */
 #background-image {
     position: relative;
     width: 100%;
@@ -71,7 +68,7 @@ h1 {
     z-index: 1;
 }
 
-#container-frase {
+.container-frase {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -84,6 +81,7 @@ h1 {
     color: white;
     text-align: center;
     font-weight: 500;
+    /* padding-top: 100px */
 }
 
 #firma{
@@ -92,5 +90,29 @@ h1 {
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-weight: 500;
-    font-style: normal;
+    font-style: oblique;
 }
+
+/* Cuenta regresiva */
+#date-time{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style:oblique;
+    font-size: 3rem;
+}
+
+.bg-fs-t{
+    color: rgb(76, 76, 2);
+    font-weight: 600;
+}
+
+.bg-fs-text{
+    color: black;
+    font-weight: bolder;
+}
+
+.counter-background{
+    background-color: #DFD3C3;
+}
+

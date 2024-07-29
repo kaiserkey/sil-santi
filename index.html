@@ -37,8 +37,6 @@
                             <li class="nav-item"><a href="#FOTOS" class="nav-link">Fotos</a></li>
                             <li class="nav-item"><a href="#MUSICA" class="nav-link">Música</a></li>
                             <li class="nav-item"><a href="#DRESSCODE" class="nav-link">Dress Code</a></li>
-                            <li class="nav-item"><a href="#MENU" class="nav-link">Menú</a></li>
-                            <li class="nav-item"><a href="#REGALOS" class="nav-link">Regalos</a></li>
                             <li class="nav-item"><a href="#INSTAGRAM" class="nav-link">Instagram Wall</a></li>
                             <li class="nav-item"><a href="#SUGERENCIACANCION" class="nav-link">Sugerencia de Canciones</a></li>
                         </ul>
@@ -46,17 +44,40 @@
                 </div>
             </nav>
         </div>
-        <div id="container-frase">
-                <p class="fs-1 fs-md-2 fs-lg-3" id="frase">Cada boda es una historia de amor que empieza con un 'sí, quiero'. Que su historia esté llena de momentos felices y recuerdos inolvidables.</p>
-                <p class="fs-1 fs-md-2 fs-lg-3" id="firma">Silvia y Santiago</p>
+        <div class="container-frase" id="FRASES">
+                <p class="h1" id="frase">El matrimonio le da un nuevo significado a nuestra historia de amor y catorce años después. Nos complace que nos acompañes a vivir el inicio de nuestro nuevo viaje.</p>
+                <p class="h1" id="firma">Silvia y Santiago</p>
         </div>
     </div>
     
-    <section>
+    <section class="container-fluid counter-background" id="CUENTA">
+        <span class="d-flex justify-content-center" id="date-time">Faltan</span>
+        <div class="d-flex justify-content-center align-items-center text-center flex-nowrap">
+            <div class="mx-2">
+                <span id="days" class="bg-fs-t fs-1"></span>
+                <div class="bg-fs-text fs-6">Días</div>
+            </div>
+            <div class="mx-2">
+                <span id="hours" class="bg-fs-t fs-1"></span>
+                <div class="bg-fs-text fs-6">Horas</div>
+            </div>
+            <div class="mx-2">
+                <span id="minutes" class="bg-fs-t fs-1"></span>
+                <div class="bg-fs-text fs-6">Minutos</div>
+            </div>
+            <div class="mx-2">
+                <span id="seconds" class="bg-fs-t fs-1"></span>
+                <div class="bg-fs-text fs-6">Segundos</div>
+            </div>
+        </div>
+    </section>
+    <section class="location-map" id="UBICACION">
+
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
