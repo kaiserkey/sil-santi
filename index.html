@@ -10,6 +10,8 @@
     <!-- Estilos Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Fuentes de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,8 +25,9 @@
         <div class="" id="front-menu">
             <nav class="navbar navbar-expand-lg" id="navBarContainer">
                 <div class="container-fluid">
-                    <button class="navbar-toggler bg-body-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler bg-body-secondary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
@@ -38,48 +41,111 @@
                             <li class="nav-item"><a href="#MUSICA" class="nav-link">Música</a></li>
                             <li class="nav-item"><a href="#DRESSCODE" class="nav-link">Dress Code</a></li>
                             <li class="nav-item"><a href="#INSTAGRAM" class="nav-link">Instagram Wall</a></li>
-                            <li class="nav-item"><a href="#SUGERENCIACANCION" class="nav-link">Sugerencia de Canciones</a></li>
+                            <li class="nav-item"><a href="#SUGERENCIACANCION" class="nav-link">Sugerencia de
+                                    Canciones</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
         <div class="container-frase" id="FRASES">
-                <p class="h1" id="frase">El matrimonio le da un nuevo significado a nuestra historia de amor y, catorce años después, nos complace que nos acompañes a vivir el inicio de nuestro nuevo viaje.</p>
-                <p class="h1" id="firma">Silvia y Santiago</p>
+            <p class="h1" id="frase">El matrimonio le da un nuevo significado a nuestra historia de amor y, catorce años
+                después, nos complace que nos acompañes a vivir el inicio de nuestro nuevo viaje.</p>
+            <p class="h1" id="firma">Silvia y Santiago</p>
         </div>
     </div>
-    
-    <section class="container-fluid counter-background p-4" id="CUENTA">
-        <span class="d-flex justify-content-center" id="date-time">Faltan</span>
-        <div class="d-flex justify-content-center align-items-center text-center flex-nowrap">
-            <div class="mx-2">
-                <span id="days" class="bg-fs-t fs-1"></span>
-                <div class="bg-fs-text fs-6">Días</div>
-            </div>
-            <div class="mx-2">
-                <span id="hours" class="bg-fs-t fs-1"></span>
-                <div class="bg-fs-text fs-6">Horas</div>
-            </div>
-            <div class="mx-2">
-                <span id="minutes" class="bg-fs-t fs-1"></span>
-                <div class="bg-fs-text fs-6">Minutos</div>
-            </div>
-            <div class="mx-2">
-                <span id="seconds" class="bg-fs-t fs-1"></span>
-                <div class="bg-fs-text fs-6">Segundos</div>
+    <section class="container-fluid counter-background dark-background outer-border" id="CUENTA">
+        <div class="mid-border">
+            <div class="inner-border">
+                <img class="corner-decoration corner-left-top" src="./assets/img/corner-decoration.jpg"></img>
+                <img class="corner-decoration corner-right-top" src="./assets/img/corner-decoration.jpg"></img>
+                <img class="corner-decoration corner-right-bottom" src="./assets/img/corner-decoration.jpg"></img>
+                <img class="corner-decoration corner-left-bottom" src="./assets/img/corner-decoration.jpg"></img>
+                <img class="vertical-decoration top"
+                    src="./assets/img/horizontally-centered-vertical-decoration.png"></img>
+                <img class="vertical-decoration bottom"
+                    src="./assets/img/horizontally-centered-vertical-decoration.png"></img>
+                <div class="" id="counter-text">
+                    <span class="d-flex justify-content-center white-text" id="date-time">Faltan</span>
+                    <div class="d-flex justify-content-center align-items-center text-center flex-nowrap">
+                        <div class="mx-2">
+                            <span id="days" class="bg-fs-t fs-1 white-text"></span>
+                            <div class="bg-fs-text fs-6 white-text">Días</div>
+                        </div>
+                        <div class="mx-2">
+                            <span id="hours" class="bg-fs-t fs-1 white-text"></span>
+                            <div class="bg-fs-text fs-6 white-text">Horas</div>
+                        </div>
+                        <div class="mx-2">
+                            <span id="minutes" class="bg-fs-t fs-1 white-text"></span>
+                            <div class="bg-fs-text fs-6 white-text">Minutos</div>
+                        </div>
+                        <div class="mx-2">
+                            <span id="seconds" class="bg-fs-t fs-1 white-text"></span>
+                            <div class="bg-fs-text fs-6 white-text">Segundos</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="fiesta container-fluid d-flex justify-content-center" >
-        <img src="./assets/img/fiesta1.jpg" alt="" class="img-fluid w-50 p-2">
-        <img src="./assets/img/fiesta2.jpg" alt="" class="img-fluid w-50 p-2">
+    <section class="location-map container-fluid p-3" id="UBICACION">
+        <section class="fiesta container-fluid d-flex justify-content-center">
+            <img src="./assets/img/fiesta1.jpg" alt="" class="img-fluid w-50 p-2">
+            <img src="./assets/img/fiesta2.jpg" alt="" class="img-fluid w-50 p-2">
+        </section>
+        <div class="row">
+            <div class="col-12 text-center p-3">
+                <p class="h2">Nuestra celebración</p>
+                <p class="fs-4">Tu presencia en este día tan especial será un honor y un gran significado para nosotros.
+                    Nos encantaría compartir este momento único con las personas que más queremos. Esperamos contar con
+                    tu compañía para celebrar el inicio de esta nueva etapa en nuestras vidas juntos.</p>
+                <p class="fs-4">La celebración se llevará a cabo en [Nombre del Salón], ubicado en [Dirección del
+                    Salón]. ¡Será un placer verte allí para conmemorar este día tan importante!</p>
+                <button type="button" class="btn btn-info" id="boton-map"><a
+                        class="link-offset-2 link-underline link-underline-opacity-0" href="http://" target="_blank"
+                        rel="noopener noreferrer">Ubicacion</a><i class="bi bi-geo-alt-fill"></i></button>
+            </div>
+        </div>
     </section>
-    <section class="location-map container-fluid text-center p-3" id="UBICACION">
-        <p class="h2">Nuestra celebración</p>
-        <p class="fs-4">Tu presencia en este día tan especial será un honor y un gran significado para nosotros. Nos encantaría compartir este momento único con las personas que más queremos. Esperamos contar con tu compañía para celebrar el inicio de esta nueva etapa en nuestras vidas juntos.</p>
-        <p class="fs-4">La celebración se llevará a cabo en [Nombre del Salón], ubicado en [Dirección del Salón]. ¡Será un placer verte allí para conmemorar este día tan importante!</p>
+    <section class="confirm container-fluid p-4" id="CONFIRMAR">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="h2">Confirmación</p>
+                <p class="fs-4">Nos encantaría contar con tu presencia en nuestra celebración. Por favor, confirma tu
+                    asistencia antes del [Fecha de Confirmación] para que podamos organizar todo de la mejor manera
+                    posible.</p>
+                <button type="button" class="btn btn-success" id="boton-confirmar"><a
+                        class="link-offset-2 link-underline link-underline-opacity-0" href="http://" target="_blank"
+                        rel="noopener noreferrer">Confirmar Asistencia</a><i class="bi bi-whatsapp"></i></button>
+            </div>
+        </div>
     </section>
+    <section class="container-fluid" id="FOTOS">
+
+    </section>
+    <section class="container-fluid" id="MUSICA">
+
+    </section>
+    <section class="container-fluid" id="DRESSCODE">
+
+    </section>
+    <section class="container-fluid" id="INSTAGRAM">
+
+    </section>
+    <section class="container-fluid" id="SUGERENCIACANCION">
+
+    </section>
+    <footer>
+        <div class="container-fluid" id="footer">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <i class="bi bi-balloon-heart"></i>
+                    <p class="fs-1">Silvia y Santiago</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
