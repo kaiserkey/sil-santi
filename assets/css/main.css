@@ -107,6 +107,27 @@ h1 {
     font-style: oblique;
 }
 
+.audio-player {
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, color 0.3s;
+    color: #DE9B72 !important; /* Color pastel para el ícono */
+    border-radius: 50%; /* Hacer el ícono circular */
+    padding: 10px; /* Espaciado alrededor del ícono */
+    background-color: #fce4ec; /* Fondo pastel para el ícono */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.audio-player:hover {
+    transform: scale(1.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    color: #f06292; /* Color pastel más intenso al pasar el ratón */
+}
+
+.audio-player:active {
+    transform: scale(1);
+    color: #d81b60; /* Color pastel al hacer clic */
+}
+
 /* Cuenta regresiva */
 
 

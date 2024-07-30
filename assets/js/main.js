@@ -24,3 +24,31 @@ function updateCountdown() {
 }
 
 setInterval(updateCountdown, 1000);
+
+document.addEventListener('DOMContentLoaded', function() {
+    var audio = document.getElementById('background-music');
+    var icon = document.getElementById('audio-icon');
+
+    icon.addEventListener('click', function() {
+        if (audio.paused) {
+            audio.play();
+            icon.classList.remove('bi-play-circle-fill');
+            icon.classList.add('bi-stop-circle-fill');
+        } else {
+            audio.pause();
+            icon.classList.remove('bi-stop-circle-fill');
+            icon.classList.add('bi-play-circle-fill');
+        }
+    });
+
+    // Cambiar el icono si la música está en reproducción cuando se carga la página
+    audio.addEventListener('play', function() {
+        icon.classList.remove('bi-play-circle-fill');
+        icon.classList.add('bi-stop-circle-fill');
+    });
+
+    audio.addEventListener('pause', function() {
+        icon.classList.remove('bi-stop-circle-fill');
+        icon.classList.add('bi-play-circle-fill');
+    });
+});
