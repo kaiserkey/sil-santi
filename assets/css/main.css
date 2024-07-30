@@ -59,12 +59,10 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../img/fondo-boda.webp');
+    background-image: url('../img/fondo-boda2.jpeg');
     background-size: cover;
     background-position: center;
-    filter: blur(1.5px);
     z-index: -2;
-    -webkit-filter: blur(1.5px);
 }
 
 #background-image::after {
@@ -74,7 +72,7 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.407);
     z-index: -1;
 }
 
@@ -107,6 +105,8 @@ h1 {
     font-style: oblique;
 }
 
+/* estilos del boton de musica */
+
 .audio-player {
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s, color 0.3s;
@@ -126,6 +126,29 @@ h1 {
 .audio-player:active {
     transform: scale(1);
     color: #d81b60; /* Color pastel al hacer clic */
+}
+
+/* estilos del boton volver arriba */
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: olive; 
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+.scroll-to-top:hover {
+    background-color: black; 
 }
 
 /* Cuenta regresiva */
@@ -309,6 +332,9 @@ h1 {
 
 .btn-info a,
 i {
+    font-family: "Dancing Script", cursive;
+    font-weight: 500;
+    font-style: oblique;
     color: white !important;
     text-decoration: none !important;
     padding: 2px;
@@ -339,9 +365,11 @@ i {
 
 .btn-success a,
 i {
+    font-family: "Dancing Script", cursive;
+    font-weight: 500;
+    font-style: oblique;
     color: white !important;
     text-decoration: none !important;
-    padding: 2px;
 }
 
 .btn-success:hover {
@@ -349,9 +377,113 @@ i {
     border: 1px solid white !important;
 }
 
+/* estilos de la hoja de canciones */
+#SUGERENCIACANCION{
+    background-color: #DFD3C3;
+}
+#SUGERENCIACANCION a, i{
+    font-family: "Dancing Script", cursive;
+    font-weight: 500;
+    font-style: oblique;
+}
+
+#SUGERENCIACANCION {
+    background-color: #897552;
+    padding: 2rem 1rem;
+    border: 1rem solid #B6C7AA;
+    border-image: repeating-linear-gradient(45deg, transparent, transparent 5px, #B6C7AA 6px, #B6C7AA 15px, transparent 16px, transparent 20px) 20/1rem;
+}
+
+.img-container {
+    overflow: hidden;
+}
+.img-fluid {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.img-container:hover .img-fluid {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+#SUGERENCIACANCION .btn-primary {
+    background-color: olive !important;
+    border: 1px solid green !important;
+    padding: 10px 20px 10px 20px !important;
+}
+
+#SUGERENCIACANCION .btn-primary a,
+i {
+    font-size: 2rem !important;
+    color: white !important;
+    text-decoration: none !important;
+    padding: 2px;
+}
+
+#SUGERENCIACANCION .btn-primary:hover {
+    background-color: black !important;
+    border: 1px solid white !important;
+}
+
+/* estilos de la seccion de fotos */
+#FOTOS{
+    background-color: #DFD3C3;
+}
+
+#FOTOS #carouselExampleFade{
+    max-height: 600px !important;
+}
+
+#FOTOS img{
+    max-height: 600px !important;
+    max-width: min-content !important;
+}
+
+/* estilos de instagram wall */
+#INSTAGRAM {
+    background-image: url('../img/fotos-instagram.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 5%;
+}
+
+/* sobra de fondo */
+#INSTAGRAM .col-12 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5%;
+}
+
+#INSTAGRAM .btn-primary {
+    background-color: olive !important;
+    border: 1px solid green !important;
+    padding: 10px 20px 10px 20px !important;
+}
+
+#INSTAGRAM .btn-primary a{
+    font-family: "Dancing Script", cursive;
+    font-weight: 500;
+    font-style: oblique;
+    color: white !important;
+}
+
+#INSTAGRAM .btn-primary a,
+i {
+    font-size: 2rem !important;
+    color: white !important;
+    text-decoration: none !important;
+    padding: 2px;
+}
+
+#INSTAGRAM .btn-primary:hover {
+    background-color: black !important;
+    border: 1px solid white !important;
+}
+
 /* estilos del footer */
 #footer {
-    font-size: 5rem;
+    font-size: 5rem !important;
     background-color: rgba(128, 128, 0, 0.801);
     color: white;
     text-align: center;
@@ -359,21 +491,21 @@ i {
 }
 
 #footer i {
-    transition: font-size 1s ease-out, color 1s ease-out;
-    -webkit-transition: font-size 1s ease-out, color 1s ease-out;
-    -moz-transition: font-size 1s ease-out, color 1s ease-out;
-    -ms-transition: font-size 1s ease-out, color 1s ease-out;
-    -o-transition: font-size 1s ease-out, color 1s ease-out;
+    transition: font-size 1s ease-out, color 1s ease-out !important;
+    -webkit-transition: font-size 1s ease-out, color 1s ease-out !important;
+    -moz-transition: font-size 1s ease-out, color 1s ease-out !important;
+    -ms-transition: font-size 1s ease-out, color 1s ease-out !important;
+    -o-transition: font-size 1s ease-out, color 1s ease-out !important;
 }
 
 #footer i:hover {
     color: red !important;
-    transition: font-size 0.5s ease-in, color 0.5s ease-in;
-    -webkit-transition: font-size 0.5s ease-in, color 0.5s ease-in;
-    -moz-transition: font-size 0.5s ease-in, color 0.5s ease-in;
-    -ms-transition: font-size 0.5s ease-in, color 0.5s ease-in;
-    -o-transition: font-size 0.5s ease-in, color 0.5s ease-in;
-    font-size: 5.5rem;
+    transition: font-size 0.5s ease-in, color 0.5s ease-in !important;
+    -webkit-transition: font-size 0.5s ease-in, color 0.5s ease-in !important;
+    -moz-transition: font-size 0.5s ease-in, color 0.5s ease-in !important;
+    -ms-transition: font-size 0.5s ease-in, color 0.5s ease-in !important;
+    -o-transition: font-size 0.5s ease-in, color 0.5s ease-in !important;
+    font-size: 5.5rem !important;
 }
 
 .fs-1 {

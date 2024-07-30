@@ -52,3 +52,19 @@ document.addEventListener('DOMContentLoaded', function() {
         icon.classList.add('bi-play-circle-fill');
     });
 });
+
+
+// JavaScript para el comportamiento del botón
+document.getElementById('scrollToTopBtn').addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Mostrar/ocultar el botón según el desplazamiento
+window.addEventListener('scroll', function() {
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    if (window.scrollY > 300) { // Mostrar botón si se desplaza más de 300px
+        scrollToTopBtn.style.display = 'flex';
+    } else {
+        scrollToTopBtn.style.display = 'none';
+    }
+});
