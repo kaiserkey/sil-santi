@@ -68,3 +68,12 @@ window.addEventListener('scroll', function() {
         scrollToTopBtn.style.display = 'none';
     }
 });
+
+// Inicializar el carrusel y configurar el intervalo de tiempo entre las diapositivas
+document.addEventListener('DOMContentLoaded', (event) => {
+    const carouselElement = document.querySelector('#carouselExampleFade');
+    const carousel = new bootstrap.Carousel(carouselElement, {
+        interval: 4000,
+        ride: 'carousel'
+    });
+});
