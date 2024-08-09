@@ -112,10 +112,13 @@
             <div class="col-12 text-center p-3">
                 <p class="h2">Nuestra Boda Civil</p>
                 <p class="fs-4">
-                    Tu presencia en este día tan especial será un honor y un gran significado para nosotros. Nos encantaría compartir este momento único con las personas que más queremos. Esperamos contar con tu compañía para celebrar el inicio de esta nueva etapa en nuestras vidas juntos.
+                    Tu presencia en este día tan especial será un honor y un gran significado para nosotros. Nos
+                    encantaría compartir este momento único con las personas que más queremos. Esperamos contar con tu
+                    compañía para celebrar el inicio de esta nueva etapa en nuestras vidas juntos.
                 </p>
                 <p class="fs-4">
-                    Nuestra boda civil se llevará a cabo en la Sociedad Rural Rio Quinto a las 20:30 hs. ¡Será un placer verte allí para conmemorar este día tan importante!
+                    Nuestra boda civil se llevará a cabo en la Sociedad Rural Rio Quinto a las 20:30 hs. ¡Será un placer
+                    verte allí para conmemorar este día tan importante!
                 </p>
                 <div class="d-flex justify-content-center align-items-center">
                     <button type="button" class="btn btn-info" id="boton-map">
@@ -140,7 +143,29 @@
                 <p class="fs-4">Nos encantaría contar con tu presencia en nuestra celebración. Por favor, confirma tu
                     asistencia antes del 15 de noviembre para que podamos organizar todo de la mejor manera
                     posible.</p>
-                <div class="d-flex justify-content-center align-items-center">
+                <div class="row justify-content-center align-items-center my-4">
+                    <div class="col-12 col-md-8 col-lg-6">
+                        <div class="card shadow border-0">
+                            <div class="card-body rounded-3 text-center p-4 bg-dark bg-opacity-10">
+                                <p class="h1 mb-3 text-dark">Costo de la Tarjeta</p>
+                                <p class="h3 text-secondary text-dark">$15,000 <span class="fs-5 text-dark">(Mayores de
+                                        diez años)</span></p>
+                                <div class="h3 mt-3 text-dark d-inline-flex align-items-center">
+                                    Alias: <span id="alias" class="ms-2">suarez.palma</span>
+                                    <button class="btn btn-dark btn-sm ms-2 py-0 px-1" onclick="copyAlias()"
+                                        title="Copiar Alias">
+                                        <i class="bi bi-clipboard"></i>
+                                    </button>
+                                </div>
+                                <a href="https://www.mercadopago.com.ar/" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-outline-info btn-lg mt-3 d-flex justify-content-center align-items-center p-2 text-dark">
+                                    <i class="bi bi-credit-card p-2 text-dark"></i> Mercado Pago
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center p-2">
                     <button type="button" class="btn btn-success " id="boton-confirmar"><a
                             class="link-offset-2 link-underline link-underline-opacity-0 p-3 fs-4"
                             href="https://wa.me/5492657586556?text=Me%20encantaría%20asistir%20a%20tu%20casamiento!"
@@ -184,9 +209,66 @@
             </button>
         </div>
     </section>
-    <section class="container-fluid" id="DRESSCODE">
-
+    <section class="container-fluid text-center py-5" id="DRESSCODE">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h1 class="h1 text-light mb-4">Dress Code</h1>
+            </div>
+            <div class="col-12">
+                <h2 class="h2 text-light">Vestimenta Formal</h2>
+            </div>
+            <div class="col-12 mt-4">
+                <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap">
+                    <!-- Círculo Blanco - Reservado para la novia -->
+                    <div class="rounded-circle bg-white text-dark d-flex justify-content-center align-items-center p-1"
+                        style="width: 150px; height: 150px; border: 2px solid #000;">
+                        <span class="h5">Reservado para la novia</span>
+                    </div>
+                    <!-- Círculos para Mujeres -->
+                    <!-- Círculo Beige -->
+                    <div class="rounded-circle"
+                        style="background-color: #f5f5dc; width: 150px; height: 150px; color: black;">
+                        <div class="d-flex justify-content-center align-items-center h-100">
+                            <span class="h5">Beige</span>
+                        </div>
+                    </div>
+                    <!-- Círculo Rosado -->
+                    <div class="rounded-circle"
+                        style="background-color: #ffc0cb; width: 150px; height: 150px; color: black;">
+                        <div class="d-flex justify-content-center align-items-center h-100">
+                            <span class="h5">Rosado</span>
+                        </div>
+                    </div>
+                    <!-- Círculo Azul Pastel -->
+                    <div class="rounded-circle"
+                        style="background-color: #a2cffe; width: 150px; height: 150px; color: black;">
+                        <div class="d-flex justify-content-center align-items-center h-100">
+                            <span class="h5">Azul Pastel</span>
+                        </div>
+                    </div>
+                    <!-- Círculos para Hombres -->
+                    <!-- Círculo Negro -->
+                    <div class="rounded-circle bg-dark text-light d-flex justify-content-center align-items-center"
+                        style="width: 150px; height: 150px;">
+                        <span class="h5">Negro</span>
+                    </div>
+                    <!-- Círculo Gris Oscuro -->
+                    <div class="rounded-circle bg-secondary text-light d-flex justify-content-center align-items-center"
+                        style="width: 150px; height: 150px;">
+                        <span class="h5">Gris Oscuro</span>
+                    </div>
+                    <!-- Círculo Azul Marino -->
+                    <div class="rounded-circle"
+                        style="background-color: #2c3e50; width: 150px; height: 150px; color: white;">
+                        <div class="d-flex justify-content-center align-items-center h-100">
+                            <span class="h5">Azul Marino</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
 
     <section class="container-fluid p-5" id="SUGERENCIACANCION">
         <div class="text-center pb-4 d-flex justify-content-center align-items-center">
@@ -202,7 +284,7 @@
             <div class="col-sm-12 col-lg-6 col-md-6 img-container">
                 <img src="./assets/img/cancion2.webp" alt="imagen musico 2" class="img-fluid h-100">
             </div>
-            <div class="col-sm-12 col-lg-6 col-md-6 img-container">
+            <div class="col-sm-12 col-lg-6 col-md-6 img-container d-none d-sm-block">
                 <img src="./assets/img/cancion1.webp" alt="imagen musico 1" class="img-fluid h-100">
             </div>
         </div>

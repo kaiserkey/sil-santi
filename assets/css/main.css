@@ -438,6 +438,35 @@ i {
     max-width: min-content !important;
 }
 
+/* Dress Code */
+#DRESSCODE {
+    background-image: url('../img/dresscode.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 5%;
+}
+
+/* sobra de fondo */
+#DRESSCODE .row {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5%;
+}
+
+#DRESSCODE h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#DRESSCODE h2{
+    font-family: "Dancing Script", cursive;
+    font-weight: 500;
+    font-style: oblique;
+}
+
 /* estilos de instagram wall */
 #INSTAGRAM {
     background-image: url('../img/fotos-instagram.jpg');

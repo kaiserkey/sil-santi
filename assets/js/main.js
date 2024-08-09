@@ -77,3 +77,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
         ride: 'carousel'
     });
 });
+
+
+function copyAlias() {
+    const aliasText = document.getElementById("alias").innerText;
+    navigator.clipboard.writeText(aliasText).then(() => {
+        console.info("Alias copiado: " + aliasText);
+    }, () => {
+        console.info("Error al copiar el alias.");
+    });
+}
